@@ -9,11 +9,13 @@
 
   <!-- CSS Link -->
   <link rel="stylesheet" href="./CSS/index.css" />
+
+  <!-- <link rel="stylesheet" href="./about.css"> -->
 </head>
 
 <body>
   <!-- HEADER / NAVIGATION -->
-  <header>
+  <header id="header">
     <div class="container-fluid header-container">
       <div class="logo">
         <img src="./assets/images/index-page/header-logo/header-logo-baground-remove.png" alt="header-logo" />
@@ -39,6 +41,15 @@
         </ul>
 
 
+        <!-- Burger Icon -->
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+
+
       </nav>
 
       <div class="search-inp">
@@ -56,7 +67,7 @@
   </header>
 
   <!-- ================= HERO SECTION ================= -->
-  <section class="hero-section">
+  <section id="hero" class="hero-section">
     <div class="container-fluid hero-container">
       <video autoplay muted loop class="hero-video">
         <source src="./assets/images/index-page/hero-sec-video/hero-section-video.mp4" type="video/mp4" />
@@ -75,7 +86,7 @@
 
   <!-- ================= STATS SECTION ================= -->
 
-  <section class="stats-section">
+  <section id="stats" class="stats-section">
     <div class="container-fluid stats-container">
       <div class="stat-box">
         <h3>120+</h3>
@@ -97,7 +108,7 @@
   </section>
 
   <!-- ================= ABOUT section  ================= -->
-  <section class="about-section">
+  <section id="about" class="about-section">
     <div class="container-fluid about-container">
       <h2>About SchoolsInfo</h2>
       <div class="about-box-i">
@@ -128,7 +139,7 @@
   </section>
 
   <!-- ================= SCHOOL CATEGORIES SECTION ================= -->
-  <section id="school-categories">
+  <section class="school-categories">
     <div class="container-fluid school-categories-container">
       <h2 class="school-categories-heading">School Categories</h2>
 
@@ -141,7 +152,7 @@
             Schools focused on early education and building strong academic
             foundations for young learners.
           </p>
-          <a href="#" class="school-card-btn">View Details</a>
+          <a href="./Schools-pages/HTML-FILES/iqra-anwarul-quran.html" class="school-card-btn">View Details</a>
         </div>
 
         <!-- Card 2 -->
@@ -152,7 +163,7 @@
             Schools providing secondary education and preparing students for
             higher academic challenges.
           </p>
-          <a href="#" class="school-card-btn">View Details</a>
+          <a href="./Schools-pages/HTML-FILES/al-jawwad-higher.html" class="school-card-btn">View Details</a>
         </div>
 
         <!-- Card 3 -->
@@ -163,7 +174,7 @@
             Privately managed schools offering modern facilities and quality
             education standards.
           </p>
-          <a href="#" class="school-card-btn">View Details</a>
+          <a href="./Schools-pages/HTML-FILES/nice-sec.html" class="school-card-btn">View Details</a>
         </div>
 
         <!-- Card 4 -->
@@ -174,7 +185,7 @@
             Government-funded schools providing affordable education for
             students across the city.
           </p>
-          <a href="#" class="school-card-btn">View Details</a>
+          <a href="./Schools-pages/HTML-FILES/labour-sec.html" class="school-card-btn">View Details</a>
         </div>
       </div>
     </div>
@@ -336,11 +347,11 @@
       <div class="footer-box">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="#">Schools</a></li>
-          <li><a href="./map.html">Site map</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="#header">HEADER</a></li>
+          <li><a href="#hero">HERO</a></li>
+          <li><a href="#stats">STATS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#schools">SCHOOL CATEGORIS</a></li>
         </ul>
       </div>
 
@@ -355,15 +366,15 @@
       <div class="footer-box">
         <h3>Social media account</h3>
         <span><a href="https://github.com/coderbyahmed">
-          <img src="./assets/images/index-page/footer-icon/github-icon.png" height="60px" alt="Github img">
-        </a></span>
+            <img src="./assets/images/index-page/footer-icon/github-icon.png" height="60px" alt="Github img">
+          </a></span>
         <span><a href="https://www.linkedin.com/in/muhammad-ahmed-415543374/">
-          <img src="./assets/images/index-page/footer-icon/linkedin-icon.png" height="60px" alt="Linkedin img">
-        </a></span>
+            <img src="./assets/images/index-page/footer-icon/linkedin-icon.png" height="60px" alt="Linkedin img">
+          </a></span>
         <span><a href="https://www.facebook.com/muhammad.ahmad.k.2025">
-          <img src="./assets/images/index-page/footer-icon/facebook-icon.png" height="37px" alt="Facebook img">
-        </a></span>
-      
+            <img src="./assets/images/index-page/footer-icon/facebook-icon.png" height="37px" alt="Facebook img">
+          </a></span>
+
       </div>
 
     </div>
@@ -378,7 +389,7 @@
   <script src="./bootstrap-files/bootstrap.bundle.min.js"></script>
 
   <!-- JavaScript Link -->
-  <script src="js/script.js"></script>
+  <script src="./JS/script.js"></script>
 </body>
 
 </html>
