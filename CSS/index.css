@@ -286,6 +286,13 @@
   }
 }
 
+
+@media (max-width: 1024px) {
+  .search-inp{
+    width: 23%;
+  }
+}
+
 /* ===== HEADER COMPLETE ===== */
 
 /* ===== HERO SECTION ===== */
@@ -702,7 +709,7 @@
 @media (max-width: 576px) {
 
   .school-categories-heading {
-    font-size: 26px;
+    font-size: 35px;
     margin-bottom: 35px;
   }
 
@@ -718,20 +725,19 @@
   }
 
   .school-category-card h3 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .school-category-card p {
-    font-size: 14px;
+    font-size: 15px;
     padding: 12px;
   }
 
   .school-card-btn {
     font-size: 15px;
-    padding: 9px 22px;
+    padding: 9px 15px;
   }
 }
-
 
 @media (max-width: 992px) {
 
@@ -740,7 +746,7 @@
   }
 
   .school-category-card {
-    max-width: 45%;
+    max-width: 48%;
   }
 }
 
@@ -749,7 +755,7 @@
   .school-category-card {
     max-width: 260px;
   }
-}
+} 
 
 /* ===== SCHOOL CATEGORIES SECTION COMPLETE ===== */
 
