@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="./bootstrap-files/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="./CSS/about.css" />
    
 </head>
@@ -24,13 +26,12 @@
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">about</a></li>
           <li class="nav-dropdown">
-            <a href="#">schools ▾</a>
+            <a href="./schools.html">schools ▾</a>
 
             <ul class="dropdown-menu">
               <li><a href="./Schools-pages/iqra-anwarul-quran.html">Iqra anwar ul Quran sec school</a></li>
               <li><a href="./Schools-pages/al-jawwad-higher.html">Al jawwad Higher sec school</a></li>
               <li><a href="./Schools-pages/nice-sec.html">Nice sec school</a></li>
-              <li><a href="./Schools-pages/labour-sec.html">Labour Public sec school</a></li>
             </ul>
           </li>
 
@@ -45,7 +46,7 @@
         <form class="search-form" action="">
           <input type="text" placeholder="Search schools..." pattern="[A-Za-z ]+"
             title="Sirf alphabets (A-Z, a-z) aur space allowed hain" spellcheck="true" />
-          <button type="submit">🔍</button>
+          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
 
 
@@ -60,20 +61,21 @@
     <!-- MOBILE SLIDE MENU -->
 <div class="mobile-slide-menu" id="mobileMenu">
   <div class="mobile-menu-header">
-    <span class="close-menu" id="closeMenu">✕</span>
+   <button type="button" class="btn-close close-menu" id="closeMenu" aria-label="Close"></button>
+    <!-- <span class="close-menu" id="closeMenu">✕</span> -->
   </div>
 
   <ul class="mobile-nav-links">
     <li><a href="./index.html">Home :</a></li>
     <li><a href="./about.html">About :</a></li>
-    <li><a href="#">Schools</a></li>
+    <li><a href="./schools.html">Schools :</a></li>
     <li><a href="./map.html">Site Map :</a></li>
     <li><a href="./contact.html">Contact :</a></li>
   </ul>
 
   <form class="mobile-search-form">
     <input type="text" placeholder="Search schools..." />
-    <button type="submit">🔍</button>
+    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
   </form>
 </div>
 
@@ -370,7 +372,7 @@
       </div>
 
       <!-- Private -->
-      <div class="school-row reverse">
+      <!-- <div class="school-row reverse">
         <div class="school-img">
           <img src="./assets/images/about-page/school-cetagri/Private School .jpg" alt="Private School" />
         </div>
@@ -384,7 +386,7 @@
           </p>
           <a href="#" class="explore-btn">Explore</a>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
