@@ -288,43 +288,43 @@
 }
 
 @media (max-width: 1024px) {
-  .search-inp{
+  .search-inp {
     width: 23%;
 
   }
-  
+
 }
 
 /* ===== my header complete ===== */
 
 /* ===== HERO SECTION ===== */
 
-.hero_container{
-    padding: 0;
-    min-height: 100vh;
-    margin-top: 75px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../assets/images/about-page/hero-sec-img/hero-img.png);
+.hero_container {
+  padding: 0;
+  min-height: 100vh;
+  margin-top: 75px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/images/about-page/hero-sec-img/hero-img.png);
 }
 
-.hero-2{
-    background-color: rgba(0, 0, 0, 0.721);
-    min-height: 100%;
-    width: 100%; 
-    opacity: 0.8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.hero-2 {
+  background-color: rgba(0, 0, 0, 0.721);
+  min-height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.hero-content{
+.hero-content {
   max-width: 900px;
   width: 100%;
   padding: 0 20px;
-  color:white;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -333,12 +333,14 @@
 
 
 
-    /* height: 40%; */
-    
-}.hero-p{
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1.6;
+  /* height: 40%; */
+
+}
+
+.hero-p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
 
 }
 
@@ -349,7 +351,8 @@
 
   .hero-p {
     font-size: 1rem;
-    text-align: center;   /* mobile pe justify kabhi mat use karo */
+    text-align: center;
+    /* mobile pe justify kabhi mat use karo */
   }
 
   .hero-content {
@@ -382,7 +385,7 @@
 .our-story h2 {
   font-size: 38px;
   font-weight: 700;
-  color:  #7c3848fb;
+  color: #7c3848fb;
   margin-bottom: 25px;
   position: relative;
 }
@@ -391,7 +394,7 @@
   content: "";
   width: 80px;
   height: 4px;
-  background:  #7c3848fb;
+  background: #7c3848fb;
   display: block;
   margin: 12px auto 0;
   border-radius: 10px;
@@ -430,11 +433,11 @@
 
 }
 
-.mission-vision-card{
-  background-color:white;
+.mission-vision-card {
+  background-color: white;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
@@ -453,8 +456,8 @@
 }
 
 @media (max-width: 425px) {
-  .mission-vision-wrapper{
-  grid-template-columns: repeat(1, 1fr);
+  .mission-vision-wrapper {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -484,7 +487,7 @@
   content: "";
   width: 90px;
   height: 4px;
-  background-color:  #7c3848fa;
+  background-color: #7c3848fa;
   display: block;
   margin: 12px auto 0;
   border-radius: 10px;
@@ -496,20 +499,20 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
-  
+
 }
 
 /* VALUE CARD (BUTTON STYLE) */
 .value-card {
-  
-  background-color:#7c3848fb;
+
+  background-color: #7c3848fb;
   color: #7c3848fb;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   cursor: default;
 }
 
-.value-card a { 
+.value-card a {
   text-decoration: none;
   padding: 15px 25px;
   color: #ffffff;
@@ -571,22 +574,22 @@
   overflow: hidden;
   text-align: center;
   transition: 0.4s ease;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .teacher-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .teacher-img {
   width: 100%;
   height: 260px;
   overflow: hidden;
-  
+
 }
 
-.teacher-img-1{
+.teacher-img-1 {
   background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
@@ -595,7 +598,7 @@
 
 }
 
-.teacher-img-2{
+.teacher-img-2 {
   background-image: url(../assets/images/about-page/our-teacher/sir-alam.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -604,16 +607,16 @@
 
 }
 
-.teacher-img-3{
+.teacher-img-3 {
   background-image: url(../assets/images/about-page/our-teacher/sir-atif.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  
+
 
 
 }
 
-.teacher-img-4{
+.teacher-img-4 {
   background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
@@ -640,7 +643,7 @@
 .teacher-info h3 {
   margin-bottom: 8px;
   font-size: 20px;
-  
+
 }
 
 .teacher-info p {
@@ -648,9 +651,9 @@
   font-size: 15px;
 }
 
-@media (max-width: 425px){
-  .teachers-wrapper{
-   grid-template-columns: repeat(1, 1fr);
+@media (max-width: 425px) {
+  .teachers-wrapper {
+    grid-template-columns: repeat(1, 1fr);
   }
 
 }
@@ -658,7 +661,7 @@
 /* ===== TEACHER SECTION COMPLETE ===== */
 
 
-/* ================= ACHIEVEMENTS SECTION ================= */ 
+/* ================= ACHIEVEMENTS SECTION ================= */
 
 .achievements-section {
   padding: 80px 0;
@@ -723,7 +726,7 @@
   line-height: 1.6;
 }
 
-/* ================= ACHIEVEMENTS SECTION COMPLETE ================= */ 
+/* ================= ACHIEVEMENTS SECTION COMPLETE ================= */
 
 
 
@@ -741,7 +744,7 @@
   color: #7c3848fa;
 }
 
-.features-wrapper {
+.features-wrappers {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
@@ -752,7 +755,7 @@
   background: #ffffff;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
   cursor: pointer;
 }
@@ -783,6 +786,68 @@
   font-size: 14px;
   color: #555;
 }
+
+/* ===== Responsive Features Section ===== */
+
+/* Large tablets & small laptops */
+@media (max-width: 1200px) {
+  .features-wrappers {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .features {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .feature-img img {
+    height: 180px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .features-wrappers {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .feature-content h3 {
+    font-size: 18px;
+  }
+
+  .feature-content p {
+    font-size: 13px;
+  }
+}
+
+/* Small mobiles */
+@media (max-width: 480px) {
+  .features {
+    padding: 40px 0;
+  }
+
+  .feature-img img {
+    height: 160px;
+  }
+
+  .feature-card {
+    border-radius: 12px;
+  }
+}
+
 
 /* ================ Features Section COMPLETE =========== */
 
@@ -825,7 +890,7 @@
   height: 350px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   transition: transform 0.4s ease;
 }
 
@@ -837,7 +902,7 @@
 .school-content {
   flex: 1;
   padding: 10px 20px;
-  
+
 }
 
 .school-content h2 {
@@ -870,15 +935,98 @@
   border-radius: 20px;
   font-weight: 500;
   transition: all 0.4s ease;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .explore-btn:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
- 
+/* ================= RESPONSIVE SCHOOL SECTION ================= */
+
+/* Large tablets / small laptops */
+@media (max-width: 1200px) {
+  .school-container {
+    padding: 0 20px;
+  }
+
+  .school-content h2 {
+    font-size: 30px;
+  }
+
+  .school-img img {
+    height: 320px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .school-row {
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .school-content p {
+    max-width: 100%;
+    height: auto;          /* IMPORTANT */
+    padding: 0;
+  }
+
+  .school-content h2 {
+    font-size: 26px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .school-section {
+    padding: 50px 0;
+  }
+
+  .school-row,
+  .school-row.reverse {
+    flex-direction: column;   /* Stack */
+    text-align: center;
+  }
+
+  .school-img img {
+    height: 250px;
+  }
+
+  .school-content {
+    padding: 10px 0;
+  }
+
+  .school-content p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .explore-btn {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+}
+
+/* Small mobiles */
+@media (max-width: 480px) {
+  .school-content h2 {
+    font-size: 22px;
+  }
+
+  .school-img img {
+    height: 220px;
+  }
+
+  .explore-btn {
+    padding: 10px 25px;
+    border-radius: 16px;
+  }
+}
+
+
 /* ===== School Sections complete ===== */
 
 
@@ -954,5 +1102,66 @@
   color: white;
 }
 
+/* ================= RESPONSIVE FOOTER ================= */
 
+/* Large tablets / small laptops */
+@media (max-width: 1200px) {
+  .footer-container {
+    padding: 40px 30px;
+  }
 
+  .footer-box h3 {
+    font-size: 18px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;   /* IMPORTANT */
+  }
+
+  .footer-box {
+    text-align: center;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .footer-box h3 {
+    font-size: 17px;
+  }
+
+  .footer-box ul li a {
+    font-size: 13px;
+  }
+
+  .footer-box p {
+    font-size: 13px;
+  }
+
+  /* Social icons center */
+  .footer-box span {
+    display: inline-block;
+    margin: 8px;
+  }
+}
+
+/* Small mobiles */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 30px 15px;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+    text-align: center;
+  }
+}
