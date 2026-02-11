@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us - SchoolsInfo</title>
     <link rel="stylesheet" href="./bootstrap-files/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- css file link -->
+    <!-- css file link  -->
     <link rel="stylesheet" href="./CSS/contact.css">
 </head>
 
 <body>
-    <header id="header">
+      <header id="header"> 
         <div class="container-fluid header-container">
             <div class="logo">
                 <img src="./assets/images/index-page/header-logo/header-logo-baground-remove.png" alt="header-logo" />
@@ -52,12 +52,12 @@
             </div>
 
         </div>
-    </header>
+    </header> 
 
-    <!-- MOBILE SLIDE MENU -->
+    <!-- MOBILE SLIDE MENU  -->
     <div class="mobile-slide-menu" id="mobileMenu">
         <div class="mobile-menu-header">
-         <button type="button" class="btn-close close-menu" id="closeMenu" aria-label="Close"></button>
+            <button type="button" class="btn-close close-menu" id="closeMenu" aria-label="Close"></button>
             <!-- <span class="close-menu" id="closeMenu">✕</span> -->
         </div>
 
@@ -74,11 +74,143 @@
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
     </div>
+    <section class="hero-section">
 
-  <script src="./bootstrap-files/bootstrap.bundle.min.js"></script>
+        <div class="hero-container">
+            <h1>Contact Schoolsinfo</h1>
+            <p>
+                Helping students parents and institutions connect with trusted educational opportunities across the
+                region.
+            </p>
+        </div>
+    </section>
 
-  <!-- JavaScript Link -->
-  <script src="./JS/index.js"></script>
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form-wapper">
+                <h2>Contact us</h2>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="example@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="+92 300 0000000" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <select required>
+                                <option value="">Select Subject</option>
+                                <option>General Inquiry</option>
+                                <option>School Registration</option>
+                                <option>Admission Details</option>
+                                <option>Technical Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>School Type</label>
+                            <select>
+                                <option value="">Select School Type</option>
+                                <option>Iqra Anwar ul Quran Sec School</option>
+                                <option>Al Jawwad Higher Sec School</option>
+                                <option>Nice Sec School</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Write your message here..."></textarea>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" required>
+                        <label>I agree to the Privacy Policy</label>
+                    </div>
+                    <div class="submit-button">
+                    <button class="button-submit" type="submit">Send Message</button>
+                    </div>
+                    <div class="success-message" id="successMessage">
+                        ✅ Your message has been submitted successfully!
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+  <footer class="site-footer">
+    <div class="container-fluid footer-container">
+
+      <div class="footer-box">
+        <h3 class="bootum-h3-headind">SchoolsInfo</h3>
+        <p>
+          SchoolsInfo is a platform to <br />
+          help parents and students find <br />
+          the best schools easily and quickly.
+
+        </p>
+
+      </div>
+
+
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#header">HEADER</a></li>
+          <li><a href="#hero">HERO</a></li>
+          <li><a href="#stats">STATS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#schools">SCHOOL CATEGORIS</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-box">
+        <h3>Contact Us</h3>
+        <p>Email: ahmedazizkhan405@gmail.com</p>
+        <p>Phone: +92 3206633975</p>
+        <p>Location: Pakistan</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Social media account</h3>
+        <span><a href="https://github.com/coderbyahmed">
+            <img src="./assets/images/index-page/footer-icon/github-icon.png" height="60px" alt="Github img">
+          </a></span>
+        <span><a href="https://www.linkedin.com/in/muhammad-ahmed-415543374/">
+            <img src="./assets/images/index-page/footer-icon/linkedin-icon.png" height="60px" alt="Linkedin img">
+          </a></span>
+        <span><a href="https://www.facebook.com/muhammad.ahmad.k.2025">
+            <img id="fac-img" src="./assets/images/index-page/footer-icon/facebook-icon.png" height="36px"
+              alt="Facebook img">
+          </a></span>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 SchoolsInfo. All Rights Reserved.</p>
+    </div>
+  </footer>
+    <script src="./bootstrap-files/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript Link  -->
+    <script src="./JS/contact.js"></script>
 
 </body>
 
