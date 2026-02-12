@@ -1,3 +1,5 @@
+// this code is to use menu bar 
+
 var burger = document.getElementById("burger");
 var mobileMenu = document.getElementById("mobileMenu");
 var closeMenu = document.getElementById("closeMenu");
@@ -12,46 +14,41 @@ closeMenu.addEventListener("click", () => {
   document.body.style.overflow = "auto";
 });
 
+
+
+// this code is use form validation 
+
 document.addEventListener("DOMContentLoaded", function () {
+
   var form = document.getElementById("contactForm");
-  var successMessage = document.getElementById("successMessage");
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    if (form.checkValidity()) {
-      successMessage.style.display = "block";
+    // Agar form valid nahi hai
+    if (!form.checkValidity()) {
 
-      form.reset();
-
-      setTimeout(() => {
-        successMessage.style.display = "none";
-      }, 4000);
+      Swal.fire({
+        icon: "error",
+        title: "Form Incomplete ❌",
+        text: "Please fill all required fields and accept Privacy Policy.",
+        timer: 2000,
+        showConfirmButton: false
+      });
+      return;
     }
+    // ✅ Agar sab fields filled hain
+    Swal.fire({
+      icon: "success",
+      title: "Message Sent Successfully ✅",
+      text: "Thank you for contacting SchoolsInfo!",
+      timer: 2000,
+      showConfirmButton: false
+    });
+    form.reset();
   });
 });
 
-var firstName = document.getElementById("firstname");
-var lastName = document.getElementById("lastname");
-var email = document.getElementById("email");
-var phoneNumber = document.getElementById("phone");
 
-function buttonSubmit() {
-  if (
-    firstName.value == "" ||
-    lastName.value == "" ||
-    email.value == "" ||
-    phoneNumber.value == ""
-  ) {
-    Swal.fire({
-      icon: "error",
-      title: "ERROR",
-      text: "Submit Form",
-      footer: '<a href="#">Why do I have this issue?</a>',
-    });
-  }
 
-  
-}
 
-// submitError.onClick("buttonSubmit");
