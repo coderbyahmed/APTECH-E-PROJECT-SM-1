@@ -358,6 +358,9 @@
 .form-container {
     width: 100%;
     max-width: 650px;
+    box-shadow: 12px 8px 47px 0px rgba(0,0,0,0.57);
+-webkit-box-shadow: 12px 8px 47px 0px rgba(0,0,0,0.57);
+-moz-box-shadow: 12px 8px 47px 0px rgba(0,0,0,0.57);
 }
 
 .form-wapper {

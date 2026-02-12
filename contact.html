@@ -27,10 +27,10 @@
                         <a href="./schools.html">schools ▾</a>
 
                         <ul class="dropdown-menu">
-                            <li><a href="./Schools-pages/iqra-anwarul-quran.html">Iqra anwar ul Quran sec school</a>
+                            <li><a href="./Schools-pages/HTML-FILES/iqra-anwarul-quran.html">Iqra anwar ul Quran sec school</a>
                             </li>
-                            <li><a href="./Schools-pages/al-jawwad-higher.html">Al jawwad Higher sec school</a></li>
-                            <li><a href="./Schools-pages/nice-sec.html">Nice sec school</a></li>
+                            <li><a href="./Schools-pages/HTML-FILES/al-jawwad-higher.html">Al jawwad Higher sec school</a></li>
+                            <li><a href="./Schools-pages/HTML-FILES/nice-sec.html">Nice sec school</a></li>
                         </ul>
                     </li>
 
@@ -93,27 +93,27 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label>First Name</label>
-                            <input type="text" placeholder="Enter your first name" required>
+                            <input type="text" placeholder="Enter your first name" id="firstname" required>
                         </div>
                         <div class="form-group">
                             <label>Last Name</label>
-                            <input type="text" placeholder="Enter your last name" required>
+                            <input type="text" placeholder="Enter your last name" id="lastname" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" placeholder="example@email.com" required>
+                            <input type="email" placeholder="example@email.com" id="email" required>
                         </div>
                         <div class="form-group">
                             <label>Phone Number</label>
-                            <input type="tel" placeholder="+92 300 0000000" required>
+                            <input type="tel" placeholder="+92 300 0000000" id="phone" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label>Subject</label>
-                            <select required>
+                            <select>
                                 <option value="">Select Subject</option>
                                 <option>General Inquiry</option>
                                 <option>School Registration</option>
@@ -140,7 +140,7 @@
                         <label>I agree to the Privacy Policy</label>
                     </div>
                     <div class="submit-button">
-                    <button class="button-submit" type="submit">Send Message</button>
+                    <button class="button-submit" type="submit" onClick="buttonSubmit()">Send Message</button>
                     </div>
                     <div class="success-message" id="successMessage">
                         ✅ Your message has been submitted successfully!
@@ -207,6 +207,8 @@
       <p>© 2026 SchoolsInfo. All Rights Reserved.</p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="./bootstrap-files/bootstrap.bundle.min.js"></script>
 
     <!-- JavaScript Link  -->
