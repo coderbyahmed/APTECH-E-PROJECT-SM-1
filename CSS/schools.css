@@ -1,3 +1,313 @@
 @import url(./header.css);
 
 /* THIS LINK IS HEADER  */
+
+/* HERO SECTION START  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 81px;
+    height: 25vh;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.hero-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.hero-container h1 {
+    color: #7C3848FA;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.hero-container p {
+    color: #7C3848FA;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+
+.search-section {
+    padding: 5px;
+    margin-top: 25px;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+
+
+}
+
+.search-form1 {
+    width: 450px;
+    text-align: center;
+
+}
+
+.search-form1 input {
+    width: 87%;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-form1 button {
+    border: none;
+    border-radius: 0px 15px 0px 15px;
+    height: 48px;
+    width: 42px;
+    background-color: #7C3848FA;
+}
+
+button i {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.card-section {
+    padding: 40px 20px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.card-container {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 1500px;
+    column-gap: 40px;
+    row-gap: 30px;
+    background-color: #ffffff;
+    
+}
+
+.school-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    min-height: 410px;
+    padding: 0px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+ }
+
+ .card-heading h3{
+    color:#7C3848FA;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    width: 100%;
+    height: auto;
+ }
+  .card-p p{
+    color:#7C3848FA;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    height: auto;
+ }
+
+ .card-button a button{
+  background-color: #7C3848FA;
+  padding: 11px 19px;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 25px;
+  margin-bottom: 10px;
+ }
+
+.card-1 {
+    width: 100%;
+    border-radius:15px 15px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+    background-image: url(../assets/images/index-page/school-cre-img/cre-1-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (min-width:0px) and (max-width: 425px) {
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media (min-width:426px) and (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (min-width:1025px) and (max-width: 1440px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+
+/* Footer Main */
+.site-footer {
+  background-color: #5f2a36;
+  margin-top: 5px;
+}
+
+/* Footer Content */
+.footer-container {
+  max-width: 1300px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Footer Box */
+.footer-box h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: rgba(245, 245, 245, 0.801);
+  text-decoration: underline;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-box p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #d9d9d9;
+}
+
+/* Links */
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  color: #d9d9d9;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+  color: #00b4d8;
+  padding-left: 5px;
+}
+
+.footer-box span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.664);
+  padding: 10px 10px;
+  font-size: 15px;
+  color: white;
+}
+@media (max-width: 576px) {
+
+  .footer-container {
+    padding: 35px 15px;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .footer-box h3 {
+    font-size: 18px;
+  }
+
+  .footer-box p,
+  .footer-box ul li a {
+    font-size: 13px;
+  }
+
+  .footer-box ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-box span {
+    margin: 0 6px;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+    padding: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .footer-container {
+    gap: 25px;
+    padding: 40px 20px;
+  }
+
+  .footer-box h3 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-box img {
+    height: 40px;
+  }
+
+  #fac-img {
+    height: 30px;
+  }
+}
