@@ -14,6 +14,20 @@ closeMenu.addEventListener("click", () => {
   document.body.style.overflow = "auto";
 });
 
+// THIS CODE IS TO USE MENU BAR SUB MENU 
+
+var featureToggle = document.getElementById("mobileFeatureToggle");
+var featurePanel = document.getElementById("featurePanel");
+var backBtn = document.getElementById("backToMenu");
+
+featureToggle.addEventListener("click", function(e){
+  e.preventDefault();
+  featurePanel.classList.add("active");
+});
+
+backBtn.addEventListener("click", function(){
+  featurePanel.classList.remove("active");
+});
 
 
 // this code is use form validation 

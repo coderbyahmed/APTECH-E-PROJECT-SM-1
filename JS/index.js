@@ -14,6 +14,22 @@
     document.body.style.overflow = "auto";
   });
 
+// this code is to use menu bar sub menu   
+
+var featureToggle = document.getElementById("mobileFeatureToggle");
+var featurePanel = document.getElementById("featurePanel");
+var backBtn = document.getElementById("backToMenu");
+
+featureToggle.addEventListener("click", function(e){
+  e.preventDefault();
+  featurePanel.classList.add("active");
+});
+
+backBtn.addEventListener("click", function(){
+  featurePanel.classList.remove("active");
+});
+
+
 
 // counter efect dala hai 
 

@@ -479,18 +479,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center; */
-
-
-
 }
 
 .teacher-img-4 {
-  background-image: url(../assets/al-jawwad-higher-sec-school/our-teachers/sir-zufeqar.jpg);
+  background-image: url(../assets/al-jawwad-higher-sec-school/our-teachers/sir-jawwad.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-
-
 }
 
 .teacher-img img {
@@ -511,7 +506,6 @@
 .teacher-info h3 {
   margin-bottom: 8px;
   font-size: 20px;
-
 }
 
 .teacher-info p {
@@ -906,6 +900,12 @@
 
 
 .footer-box p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #d9d9d9;
+}
+
+.footer-box p a {
   font-size: 14px;
   line-height: 1.9;
   color: #d9d9d9;

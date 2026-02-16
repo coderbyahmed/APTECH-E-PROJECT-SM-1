@@ -218,6 +218,62 @@
   border: none;
   cursor: pointer;
 }
+
+/* ===== MOBILE DROPDOWN ===== */
+
+/* ===== FEATURE SIDE PANEL ===== */
+
+.feature-panel {
+  position: fixed;
+  top: 80px;
+  right: -100%;
+  width: 70%;
+  height: 47vh;
+  background: #5f2a36;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.15);
+  transition: right 0.9s ease;
+  z-index: 99999999999999999999;
+
+}
+
+/* When active */
+.feature-panel.active {
+  right: 0;
+}
+
+/* Header */
+.feature-header {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Links */
+.feature-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 100%;
+}
+
+.feature-links li {
+  margin: 15px 0;
+}
+
+.feature-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
 /* ===== RESPONSIVE ===== */
 
 @media (min-width:10px)and (max-width:500px) {
