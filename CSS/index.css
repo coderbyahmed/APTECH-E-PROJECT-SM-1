@@ -600,140 +600,196 @@
 /* ========= HOW IT WORK SECTION COMPLETE ============== */
 
 /* FACILITIES Schools Section */
-.feature-container {
-  background: linear-gradient(135deg, #f8faff, #eef3ff);
+/* ===============================
+   FACILITY SECTION BASE STYLE
+================================= */
+
+.facility-section {
+  background: #f8f9fa;
+  padding: 80px 20px;
 }
 
-.section-title {
-  font-size: 2rem;
+.facility-title {
+  font-size: 34px;
   font-weight: 700;
-  color: #0d1b2a;
+  margin-bottom: 18px;
 }
 
-.section-subtitle {
-  color: #6c757d;
-  max-width: 600px;
+.facility-description {
+  max-width: 750px;
   margin: 0 auto;
+  font-size: 17px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ===============================
+   CARD DESIGN
+================================= */
+
+.facility-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.facility-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+
+.facility-card h5 {
+  font-weight: 600;
+  margin-bottom: 12px;
   font-size: 20px;
 }
 
-/* Feature Card */
-.feature-card {
-  padding: 29px;
-  border-radius: 14px;
-  height: auto;
-  min-height: 300px;
-  width: 100%;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+.facility-card p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+/* ===============================
+   PROGRESS BAR
+================================= */
+
+.progress-label {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
 }
 
-.feature-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-
-.feature-card h5 {
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #1b263b;
-
-}
-
-.feature-card p {
-  font-size: 18px;
-  color: #6c757d;
-}
-
-/* Progress */
-.progress-wrapper {
-  margin: 15px 0;
-}
-
-.progress-wrapper span {
-  font-size: 15px;
-  font-weight: 600;
-  color: #495057;
-
-}
-
-.progress {
-  height: 8px;
-  border-radius: 20px;
-  background-color: rgba(222, 184, 135, 0.342);
+.facility-progress {
+  height: 10px;
+  background: #e9ecef;
+  border-radius: 50px;
   overflow: hidden;
 }
 
-.progress-bar {
-  background: linear-gradient(90deg, #7c3848, #5f2a36);
-  border-radius: 20px;
+.facility-progress-bar {
+  height: 100%;
+  background: #5f2a36;
+  border-radius: 50px;
+  transition: width 0.6s ease;
 }
 
-/* Button */
-.feature-btn {
-  width: 100%;
-  margin-top: auto;
-  padding: 10px;
-  border-radius: 25px;
-  background: #5f2a36f5;
-  color: #fff;
-  font-weight: 500;
-  transition: background 0.3s ease;
-}
+/* ==========================================
+   RESPONSIVE BREAKPOINTS
+============================================= */
 
-.feature-btn:hover {
-  background: #7c3848f5;
-  color: #fff;
-}
 
-@media (max-width: 576px) {
-
-  .section-title {
-    font-size: 1.5rem;
+/* ====== LARGE SCREENS (Desktop ≥ 1200px) ====== */
+@media (min-width: 1200px) {
+  .facility-section {
+    padding: 100px 60px;
   }
 
-  .section-subtitle {
+  .facility-title {
+    font-size: 38px;
+  }
+
+  .facility-description {
+    font-size: 18px;
+  }
+}
+
+
+/* ====== LAPTOP (992px - 1199px) ====== */
+@media (max-width: 1199px) {
+  .facility-title {
+    font-size: 30px;
+  }
+
+  .facility-description {
     font-size: 16px;
-    padding: 0 10px;
   }
 
-  .feature-card {
+  .facility-card {
+    padding: 25px;
+  }
+}
+
+
+/* ====== TABLET (768px - 991px) ====== */
+@media (max-width: 991px) {
+
+  .facility-section {
+    padding: 70px 30px;
+  }
+
+  .facility-title {
+    font-size: 26px;
+  }
+
+  .facility-description {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+
+  .facility-card {
     padding: 22px;
-    min-height: auto;
-    text-align: center;
   }
 
-  .feature-card h5 {
+  .facility-card h5 {
     font-size: 18px;
   }
 
-  .feature-card p {
-    font-size: 15px;
-  }
-
-  .progress-wrapper span {
+  .facility-card p {
     font-size: 14px;
   }
 
-  .feature-btn {
-    font-size: 15px;
-    padding: 9px;
-  }
 }
 
-@media (max-width: 992px) {
 
-  .section-title {
-    font-size: 1.75rem;
+/* ====== MOBILE (≤ 767px) ====== */
+@media (max-width: 767px) {
+
+  .facility-section {
+    padding: 60px 15px;
   }
 
-  .feature-card {
-    min-height: 320px;
+  .facility-title {
+    font-size: 22px;
   }
+
+  .facility-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .facility-card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .facility-card h5 {
+    font-size: 17px;
+  }
+
+  .facility-card p {
+    font-size: 13px;
+  }
+
+  .progress-label {
+    font-size: 12px;
+  }
+
+  .facility-progress {
+    height: 8px;
+  }
+
 }
+
 
 
 /* Facilities Schools Section complete */
