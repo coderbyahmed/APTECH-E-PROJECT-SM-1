@@ -153,7 +153,120 @@ button i {
     border-radius:15px 15px 0px 0px;
     height: 250px;
     object-fit: cover;
-    background-image: url(../assets/images/index-page/school-cre-img/cre-1-img.jpg);
+    background-image: url(../assets/images/Schools-page/The\ Educaters\ School.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.card-2 {
+    width: 100%;
+    border-radius:15px 15px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+    background-image: url(../assets/images/Schools-page/FG\ School.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-3 {
+    width: 100%;
+    border-radius:15px 15px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+    background-image: url(../assets/images/Schools-page/Scholar\ Grammer\ School.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.card-4 {
+    width: 100%;
+    border-radius:15px 15px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+    background-image: url(../assets/images/Schools-page/Allied\ School.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.card-5 {
+    width: 100%;
+    border-radius:15px 15px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+    background-image: url(../assets/images/Schools-page/Abbas\ ali\ Memorial\ School.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.card-6 {
+    width: 100%;
+    border-radius:15px 15px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+    background-image: url(../assets/images/Schools-page/Adam\ Jee\ Public\ Schhol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.card-7 {
+    width: 100%;
+    border-radius:15px 15px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+    background-image: url(../assets/images/Schools-page/TCF\ School.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.card-8 {
+    width: 100%;
+    border-radius:15px 15px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+    background-image: url(../assets/images/Schools-page/Gul\ Muhammad\ Meher\ technical\ School.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.card-9 {
+    width: 100%;
+    border-radius:15px 15px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+    background-image: url(../assets/images/Schools-page/The\ Lightup\ School.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.card-10 {
+    width: 100%;
+    border-radius:15px 15px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+    background-image: url(../assets/images/Schools-page/Bright\ Vision\ Grammer\ Schooljpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.card-11 {
+    width: 100%;
+    border-radius:15px 15px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+    background-image: url(../assets/images/Schools-page/Mashain\ Public\ sec\ school.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.card-12 {
+    width: 100%;
+    border-radius:15px 15px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+    background-image: url(../assets/images/Schools-page/AA\ Memorial\ School.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

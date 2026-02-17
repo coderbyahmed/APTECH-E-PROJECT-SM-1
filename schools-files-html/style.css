@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+.school-section{
+    width:100%;
+    padding:80px 8%;
+    margin-top: 82px;
+    background: linear-gradient(135deg,#e3f2fd,#ffffff);
+}
+
+.school-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    height: 600px;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.5s ease;
+}
+
+/* Hover Animation on Whole Box */
+.school-container:hover{
+    transform: translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Image Side */
+.school-image{
+    flex:1;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.school-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+    transition:0.5s ease;
+}
+
+/* Image Zoom Animation */
+.school-container:hover .school-image img{
+    transform:scale(1.1);
+}
+
+/* Content Side */
+.school-content{
+    flex:1;
+    animation:fadeIn 1.2s ease forwards;
+}
+
+.school-name{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#7C3848FA;
+}
+
+.school-description{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+    color:#444;
+}
+
+/* Button */
+.view-btn{
+    padding:14px 35px;
+    border:none;
+    background:#7C3848FA;
+    color:#fff;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.view-btn:hover{
+    background:#7c3848c9;
+    transform:scale(1.08);
+}
+
+/* Fade Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Large Tablets */
+@media(max-width:1024px){
+    .school-name{
+        font-size:32px;
+    }
+    .school-description{
+        font-size:16px;
+    }
+}
+
+/* Tablets */
+@media(max-width:768px){
+
+    .school-section{
+        padding:50px 5%;
+        margin-top: 40px;
+    }
+    .school-container{
+        flex-direction:column;
+        text-align:center;
+        padding:30px;
+       
+    }
+    
+    .school-image{
+        width: 100%;
+    }
+
+    .school-name{
+        font-size:28px;
+    }
+}
+
+/* Mobile */
+@media(max-width:480px){
+    .school-container{
+        padding:20px 5%;
+        margin-top: 15px;
+    }
+    .school-image{
+        width: 100%;
+        height: 100%;
+    }
+
+    .school-name{
+        font-size:24px;
+    }
+
+    .school-description{
+        font-size:15px;
+    }
+
+
+    .view-btn{
+        width:100%;
+    }
+}
+
+
+  /* sCHOOL sECTION eND */
+
+
+/* Footer Main */
+.site-footer {
+  background-color: #5f2a36;
+  margin-top: 5px;
+}
+
+/* Footer Content */
+.footer-container {
+  max-width: 1300px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Footer Box */
+.footer-box h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: rgba(245, 245, 245, 0.801);
+  text-decoration: underline;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-box p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #d9d9d9;
+}
+
+/* Links */
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  color: #d9d9d9;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+  color: #00b4d8;
+  padding-left: 5px;
+}
+
+.footer-box span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.664);
+  padding: 10px 10px;
+  font-size: 15px;
+  color: white;
+}
+@media (max-width: 576px) {
+
+  .footer-container {
+    padding: 35px 15px;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .footer-box h3 {
+    font-size: 18px;
+  }
+
+  .footer-box p,
+  .footer-box ul li a {
+    font-size: 13px;
+  }
+
+  .footer-box ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-box span {
+    margin: 0 6px;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+    padding: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .footer-container {
+    gap: 25px;
+    padding: 40px 20px;
+  }
+
+  .footer-box h3 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-box img {
+    height: 40px;
+  }
+
+  #fac-img {
+    height: 30px;
+  }
+}
