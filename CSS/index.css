@@ -599,14 +599,13 @@
 
 /* ========= HOW IT WORK SECTION COMPLETE ============== */
 
-/* FACILITIES Schools Section */
 /* ===============================
    FACILITY SECTION BASE STYLE
 ================================= */
 
 .facility-section {
-  background: #f8f9fa;
   padding: 80px 20px;
+  background: linear-gradient(135deg, #f8faff, #eef3ff);
 }
 
 .facility-title {
@@ -628,7 +627,7 @@
 ================================= */
 
 .facility-card {
-  background: #ffffff;
+  background: #ffffff; 
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -759,11 +758,13 @@
   }
 
   .facility-title {
-    font-size: 22px;
+    font-size: 30px;
+    color: #7c3848;
+    font-weight: bold;
   }
 
   .facility-description {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.6;
   }
 
