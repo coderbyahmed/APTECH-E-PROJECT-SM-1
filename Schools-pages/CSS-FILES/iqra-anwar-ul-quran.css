@@ -8,14 +8,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url();
+  background-image: url(../assets/iqra-anwar-ul-sec-school/hero-sec-img/school-main-gate.jpeg);
 }
 
 .hero-2 {
   background-color: rgba(0, 0, 0, 0.721);
   min-height: 100%;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -456,14 +456,14 @@
 }
 
 .teacher-img-1 {
-  background-image: url();
+  background-image: url(../assets/iqra-anwar-ul-sec-school/our-teachers/sir-gul-sher-ahmed.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .teacher-img-2 {
-  background-image: url();
+  background-image: url(../assets/iqra-anwar-ul-sec-school/our-teachers/sir-alam-sher.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -472,7 +472,7 @@
 }
 
 .teacher-img-3 {
-  background-image: url();
+  background-image: url(../assets/iqra-anwar-ul-sec-school/our-teachers/sir-aziz.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center; */
@@ -482,7 +482,7 @@
 }
 
 .teacher-img-4 {
-  background-image: url();
+  background-image: url(../assets/iqra-anwar-ul-sec-school/our-teachers/sir-zulfeqar.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
