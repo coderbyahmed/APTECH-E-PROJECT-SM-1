@@ -31,7 +31,7 @@ backBtn.addEventListener("click", function(){
 
 
 
-// counter efect dala hai 
+// THIS CODE IS TO USE NUMBRINING HOME PAGE SECTION
 
   var counters = document.querySelectorAll(".counter");
 
@@ -70,4 +70,105 @@ var observer = new IntersectionObserver((entries, observer) => {
 
 counters.forEach(counter => {
   observer.observe(counter);
+});
+
+
+// THIIS CODE IS TO USE AOS ANIMATION FOR SCROLLING HERO SECTION 
+document.addEventListener("DOMContentLoaded", function() {
+    const heroSection = document.querySelector(".hero-section");
+
+    setTimeout(() => {
+        heroSection.classList.add("loaded");
+    }, 500);
+});
+
+
+// THIS CODE IS TO USE AOS ANIMATION FOR SCROLLING ABOUT SECTION
+document.addEventListener("DOMContentLoaded", function() {
+
+  const aboutContainer = document.querySelector(".about-container");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        aboutContainer.classList.add("show");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(aboutContainer);
+
+});
+
+
+// THIS CODE IS TO USE AOS ANIMATION FOR SCROLLING SCHOOL CATEGORY SECTION 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".school-category-card");
+
+  // Observer options
+  const options = {
+    root: null, // viewport
+    rootMargin: "0px",
+    threshold: 0.3 // jab 30% section viewport me dikhai de
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add("animate"); // animation start
+        observer.unobserve(entry.target); // once animated, no need to observe again
+      }
+    });
+  }, options);
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
+});
+
+
+
+// THIS CODE IS TO USE AOS ANIMATION FOR SCROLLING HOW IT WORKS, FACILITY AND TESTIMONIALS SECTION
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const animatedSections = document.querySelectorAll(
+    ".how-it-works, .facility-section, .testimonials"
+  );
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+
+        const elements = entry.target.querySelectorAll(
+          ".step-card, .facility-card, .testimonial-card"
+        );
+
+        elements.forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.add("animate");
+          }, index * 150);
+        });
+
+        obs.unobserve(entry.target);
+      }
+
+    });
+  }, {
+    threshold: 0.1,           // mobile ke liye low threshold
+    rootMargin: "0px 0px -50px 0px" // thoda pehle trigger
+  });
+
+  animatedSections.forEach(section => {
+    observer.observe(section);
+  });
+
+});
+
+elements.forEach((el, index) => {
+  setTimeout(() => {
+    el.classList.add("animate");
+  }, index * 250);
 });

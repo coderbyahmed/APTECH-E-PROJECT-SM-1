@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- CSS Link -->
   <link rel="stylesheet" href="./CSS/index.css" />
 </head>
@@ -86,25 +87,27 @@
     </ul>
   </div>
 
-
   <!-- ================= HERO SECTION START ================= -->
-  <section id="hero" class="hero-section">
-    <div class="container-fluid hero-container">
-      <video autoplay muted loop class="hero-video">
-        <source src="./assets/images/index-page/hero-sec-video/hero-section-video.mp4" type="video/mp4" />
-      </video>
+<section id="hero" class="hero-section">
 
-      <div class="hero-content">
-        <h1>Find the Best Schools in Your City</h1>
-        <p>
-          SchoolsInfo helps parents and students to explore schools, compare
-          facilities, and find the right school easily.
-        </p>
-        <a href="./contact.html" class="btn hero-btn">APPLY NOW</a>
-      </div>
-    </div>
-  </section>
-  <!-- ================= HERO SECTION END ================= -->
+  <div class="hero-video-wrapper">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="./assets/images/index-page/hero-sec-video/hero-section-video.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-content" data-aos="fade-up">
+    <h1>Find the Best Schools in Your City</h1>
+    <p>
+      SchoolsInfo helps parents and students to explore schools,
+      compare facilities, and find the right school easily.
+    </p>
+    <a href="./contact.html" class="btn hero-btn">APPLY NOW</a>
+  </div>
+
+</section>
+<!-- ================= HERO SECTION END ================= -->
 
   <!-- ================= STATS SECTION START ================= -->
   <section class="stats-section">
@@ -237,91 +240,91 @@
 
   <!-- Featured Schools Section -->
   <section class="facility-section py-5">
-  <div class="container-fluid">
+    <div class="container-fluid">
 
-    <!-- Section Heading -->
-    <div class="row mb-5 text-center">
-      <div class="col-12">
-        <h2 class="facility-title">Our School Facilities</h2>
-        <p class="facility-description">
-          Our school provides a well-balanced environment where academic excellence,
-          physical development, and student engagement are equally prioritized.
-          Modern infrastructure and supportive facilities ensure a productive
-          and inspiring learning atmosphere.
-        </p>
+      <!-- Section Heading -->
+      <div class="row mb-5 text-center">
+        <div class="col-12">
+          <h2 class="facility-title">Our School Facilities</h2>
+          <p class="facility-description">
+            Our school provides a well-balanced environment where academic excellence,
+            physical development, and student engagement are equally prioritized.
+            Modern infrastructure and supportive facilities ensure a productive
+            and inspiring learning atmosphere.
+          </p>
+        </div>
+      </div>
+
+      <!-- Facilities Cards -->
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="facility-card">
+            <h5>Sports Facilities</h5>
+            <p>Indoor and outdoor sports programs designed for physical fitness and teamwork.</p>
+
+            <div class="progress-label">
+              <span>Availability</span>
+              <span>85%</span>
+            </div>
+            <div class="facility-progress">
+              <div class="facility-progress-bar" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="facility-card">
+            <h5>School Events</h5>
+            <p>Annual academic, cultural, and co-curricular activities for student growth.</p>
+
+            <div class="progress-label">
+              <span>Engagement</span>
+              <span>75%</span>
+            </div>
+            <div class="facility-progress">
+              <div class="facility-progress-bar" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="facility-card">
+            <h5>Canteen</h5>
+            <p>Clean, hygienic, and nutritious food options for students and staff.</p>
+
+            <div class="progress-label">
+              <span>Quality</span>
+              <span>90%</span>
+            </div>
+            <div class="facility-progress">
+              <div class="facility-progress-bar" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="facility-card">
+            <h5>Play Area</h5>
+            <p>Safe and spacious recreational zones for active learning and fun.</p>
+
+            <div class="progress-label">
+              <span>Safety</span>
+              <span>80%</span>
+            </div>
+            <div class="facility-progress">
+              <div class="facility-progress-bar" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-
-    <!-- Facilities Cards -->
-    <div class="row g-4">
-
-      <!-- Card 1 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="facility-card">
-          <h5>Sports Facilities</h5>
-          <p>Indoor and outdoor sports programs designed for physical fitness and teamwork.</p>
-
-          <div class="progress-label">
-            <span>Availability</span>
-            <span>85%</span>
-          </div>
-          <div class="facility-progress">
-            <div class="facility-progress-bar" style="width: 85%"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="facility-card">
-          <h5>School Events</h5>
-          <p>Annual academic, cultural, and co-curricular activities for student growth.</p>
-
-          <div class="progress-label">
-            <span>Engagement</span>
-            <span>75%</span>
-          </div>
-          <div class="facility-progress">
-            <div class="facility-progress-bar" style="width: 75%"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="facility-card">
-          <h5>Canteen</h5>
-          <p>Clean, hygienic, and nutritious food options for students and staff.</p>
-
-          <div class="progress-label">
-            <span>Quality</span>
-            <span>90%</span>
-          </div>
-          <div class="facility-progress">
-            <div class="facility-progress-bar" style="width: 90%"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="facility-card">
-          <h5>Play Area</h5>
-          <p>Safe and spacious recreational zones for active learning and fun.</p>
-
-          <div class="progress-label">
-            <span>Safety</span>
-            <span>80%</span>
-          </div>
-          <div class="facility-progress">
-            <div class="facility-progress-bar" style="width: 80%"></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+  </section>
   <!-- Featured Schools Section END -->
 
 
@@ -376,7 +379,6 @@
           <li><a href="./schools.html">SCHOOLS</a></li>
           <li><a href="./sitemap.html">SITE MAP</a></li>
           <li><a href="./contact.html">CONTACT US</a></li>
-          <li><a href="#features.html">FEATURES SCHOOLS</a></li>
         </ul>
       </div>
 

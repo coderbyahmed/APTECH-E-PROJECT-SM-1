@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - SchoolsInfo</title>
-           <!-- bootstrap css file link -->
+    <!-- bootstrap css file link -->
     <link rel="stylesheet" href="./bootstrap-files/bootstrap.min.css" />
-           <!-- font awesome css file link -->
+    <!-- font awesome css file link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-           <!-- css file link  -->
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- css file link  -->
     <link rel="stylesheet" href="./CSS/contact.css">
 </head>
 
 <body>
-          <!-- header is starting point -->
-  <header id="header">
-    <div class="container-fluid header-container">
-      <div class="logo">
-        <img src="./assets/images/index-page/header-logo/header-logo-baground-remove.png" alt="header-logo" />
-      </div>
-      <!-- navigation  -->
-      <nav class="nav-container">
-        <ul class="nav-links">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">about</a></li>
-          <li><a href="./schools.html">schools</a></li>
-          <li class="nav-dropdown">
-            <a href="#">Feature Schools ▾</a>
-            
-            <ul class="dropdown-menu">
-              <li><a href="./Schools-pages/HTML-FILES/iqra-anwarul-quran.html">Iqra anwar ul Quran sec school</a></li>
-              <li><a href="./Schools-pages/HTML-FILES/al-jawwad-higher.html">Al jawwad Higher sec school</a></li>
-              <li><a href="./Schools-pages/HTML-FILES/nice-sec.html">Nice sec school</a></li>
-            </ul>
-          </li>
-          <li><a href="./sitemap.html">site map</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+    <!-- header is starting point -->
+    <header id="header">
+        <div class="container-fluid header-container">
+            <div class="logo">
+                <img src="./assets/images/index-page/header-logo/header-logo-baground-remove.png" alt="header-logo" />
+            </div>
+            <!-- navigation  -->
+            <nav class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./schools.html">schools</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#">Feature Schools ▾</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="./Schools-pages/HTML-FILES/iqra-anwarul-quran.html">Iqra anwar ul Quran sec
+                                    school</a></li>
+                            <li><a href="./Schools-pages/HTML-FILES/al-jawwad-higher.html">Al jawwad Higher sec
+                                    school</a></li>
+                            <li><a href="./Schools-pages/HTML-FILES/nice-sec.html">Nice sec school</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sitemap.html">site map</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- hame burger icon  -->
+            <div class="burger" id="burger">
+                ☰
+            </div>
+
+        </div>
+    </header>
+    <!-- header is ending point -->
+
+    <!-- MOBILE SLIDE MENU -->
+    <div class="mobile-slide-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <button type="button" class="btn-close close-menu" id="closeMenu" aria-label="Close"></button>
+        </div>
+
+        <ul class="mobile-nav-links">
+            <li><a href="./index.html">Home :</a></li>
+            <li><a href="./about.html">About :</a></li>
+            <li><a href="./schools.html">Schools :</a></li>
+            <li><a href="#" id="mobileFeatureToggle">Feature Schools ▾</a></li>
+            <li><a href="./sitemap.html">Site Map :</a></li>
+            <li><a href="./contact.html">Contact :</a></li>
         </ul>
-      </nav>
-      <!-- hame burger icon  -->
-      <div class="burger" id="burger">
-        ☰
-      </div>
 
-    </div>
-  </header>
-          <!-- header is ending point -->
-
-  <!-- MOBILE SLIDE MENU -->
-  <div class="mobile-slide-menu" id="mobileMenu">
-    <div class="mobile-menu-header">
-      <button type="button" class="btn-close close-menu" id="closeMenu" aria-label="Close"></button>
+        <form class="mobile-search-form">
+            <input type="text" placeholder="Search schools..." />
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
     </div>
 
-    <ul class="mobile-nav-links">
-      <li><a href="./index.html">Home :</a></li>
-      <li><a href="./about.html">About :</a></li>
-      <li><a href="./schools.html">Schools :</a></li>
-      <li><a href="#" id="mobileFeatureToggle">Feature Schools ▾</a></li>
-      <li><a href="./sitemap.html">Site Map :</a></li>
-      <li><a href="./contact.html">Contact :</a></li>
-    </ul>
+    <!-- MOBILE SLIDE MENU END  -->
 
-    <form class="mobile-search-form">
-      <input type="text" placeholder="Search schools..." />
-      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
-  </div>
-
-  <!-- MOBILE SLIDE MENU END  -->
-
-  <!-- FEATURED SCHOOLS SIDE PANEL -->
-  <div class="feature-panel" id="featurePanel">
-    <div class="feature-header">
-      <span id="backToMenu">← Back</span>
+    <!-- FEATURED SCHOOLS SIDE PANEL -->
+    <div class="feature-panel" id="featurePanel">
+        <div class="feature-header">
+            <span id="backToMenu">← Back</span>
+        </div>
+        <ul class="feature-links">
+            <li><a href="./Schools-pages/HTML-FILES/iqra-anwarul-quran.html">Iqra Anwar ul Quran Sec School</a></li>
+            <li><a href="./Schools-pages/HTML-FILES/al-jawwad-higher.html">Al Jawwad Higher Sec School</a></li>
+            <li><a href="./Schools-pages/HTML-FILES/nice-sec.html">Nice Sec School</a></li>
+        </ul>
     </div>
-    <ul class="feature-links">
-      <li><a href="./Schools-pages/HTML-FILES/iqra-anwarul-quran.html">Iqra Anwar ul Quran Sec School</a></li>
-      <li><a href="./Schools-pages/HTML-FILES/al-jawwad-higher.html">Al Jawwad Higher Sec School</a></li>
-      <li><a href="./Schools-pages/HTML-FILES/nice-sec.html">Nice Sec School</a></li>
-    </ul>
-  </div>
 
-         <!-- hero section starting point -->
+    <!-- hero section starting point -->
 
     <section class="hero-section" id="hero-contact">
         <div class="hero-container">
@@ -96,9 +102,9 @@
         </div>
     </section>
 
-        <!-- hero section is ending point    -->
+    <!-- hero section is ending point    -->
 
-        <!-- form contact section is starting point -->
+    <!-- form contact section is starting point -->
 
     <section class="form-section" id="form">
         <div class="form-container">
@@ -164,9 +170,42 @@
             </div>
         </div>
     </section>
-        <!-- form contact section is ending point -->
+    <!-- form contact section is ending point -->
 
-        <!-- footer section starting point -->
+    <section class="contact-location-section">
+
+    <div class="location-container">
+
+        <div class="location-header">
+            <h2>Find Your Live Location</h2>
+            <p>
+                Allow location access to view your real-time position on the map.
+            </p>
+        </div>
+
+        <div class="location-content">
+
+            <div class="location-info-card">
+                <h3>Your Coordinates</h3>
+                <div class="coordinates-box">
+                    <p id="latitude">Latitude: --</p>
+                    <p id="longitude">Longitude: --</p>
+                </div>
+                <button id="getLocationBtn">Get My Location</button>
+            </div>
+
+            <div class="location-map-card">
+                <div id="liveMap"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- footer section starting point -->
 
     <footer class="site-footer" id="footer-section">
         <div class="container-fluid footer-container">
@@ -187,8 +226,6 @@
                     <li><a href="./schools.html">SCHOOLS</a></li>
                     <li><a href="./sitemap.html">SITE MAP</a></li>
                     <li><a href="./contact.html">CONTACT US</a></li>
-                    <li><a href="./features.html">FEATURES SCHOOLS</a></li>
-                    
                 </ul>
             </div>
 
@@ -223,18 +260,22 @@
             <p>© 2026 SchoolsInfo. All Rights Reserved.</p>
         </div>
     </footer>
-        <!-- footer section ending point -->
+    <!-- footer section ending point -->
 
-        <!-- sweet alert 2 js file link form validation start-->
-        
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        
-        <!-- sweet alert 2 js file link form validation end-->
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-        <!-- bootstrap js file link  -->
-        <script src="./bootstrap-files/bootstrap.bundle.min.js"></script>
-        
-        <!-- bootstrap js file link  -->
+
+    <!-- sweet alert 2 js file link form validation start-->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- sweet alert 2 js file link form validation end-->
+
+    <!-- bootstrap js file link  -->
+    <script src="./bootstrap-files/bootstrap.bundle.min.js"></script>
+
+    <!-- bootstrap js file link  -->
 
     <!-- JavaScript Link  -->
     <script src="./JS/contact.js"></script>

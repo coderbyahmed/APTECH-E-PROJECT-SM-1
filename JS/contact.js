@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         icon: "error",
         title: "Form Incomplete ❌",
         text: "Please fill all required fields and accept Privacy Policy.",
-        timer: 2000,
+        timer: 4000,
         showConfirmButton: false
       });
       return;
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
       icon: "success",
       title: "Message Sent Successfully ✅",
       text: "Thank you for contacting SchoolsInfo!",
-      timer: 2000,
+      timer: 4000,
       showConfirmButton: false
     });
     form.reset();
@@ -65,4 +65,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// THIS CODE IS TO GET USER LOCATION AND SHOW ON MAP
 
+document.addEventListener("DOMContentLoaded", function () {
+
+    var btn = document.getElementById("getLocationBtn");
+
+    btn.addEventListener("click", function () {
+
+        if (!navigator.geolocation) {
+            alert("Geolocation is not supported by your browser.");
+            return;
+        }
+
+        navigator.geolocation.getCurrentPosition(
+            function (position) {
+
+                var lat = position.coords.latitude;
+                var lon = position.coords.longitude;
+
+                // Show coordinates
+                document.getElementById("latitude").textContent =
+                    "Latitude: " + lat.toFixed(6);
+
+                document.getElementById("longitude").textContent =
+                    "Longitude: " + lon.toFixed(6);
+
+                // Create Map
+                var map = L.map("liveMap").setView([lat, lon], 15);
+
+                L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                    attribution: "&copy; OpenStreetMap contributors"
+                }).addTo(map);
+
+                L.marker([lat, lon])
+                    .addTo(map)
+                    .bindPopup("You are here")
+                    .openPopup();
+
+                btn.disabled = true;
+                btn.textContent = "Location Loaded";
+
+            },
+            function () {
+                alert("Unable to retrieve your location.");
+            }
+        );
+
+    });
+
+});
