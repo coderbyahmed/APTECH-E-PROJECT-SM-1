@@ -1,30 +1,35 @@
-// mobile slide menu bar 
+// YE CODE IS TO USE MOBILE MENU IN NAVBAR
 
-  var burger = document.getElementById("burger");
-  var mobileMenu = document.getElementById("mobileMenu");
-  var closeMenu = document.getElementById("closeMenu");
+  var burger = document.getElementById("burger"); // mobile menu icon ko select karne ke liye
+  var mobileMenu = document.getElementById("mobileMenu"); // mobile menu container ko select karne ke liye
+  var closeMenu = document.getElementById("closeMenu"); // mobile menu close icon ko select karne ke liye
 
+  // jab burger icon pe click ho to mobile menu show karo aur body scroll disable karo
   burger.addEventListener("click", () => {
     mobileMenu.classList.add("active");
     document.body.style.overflow = "hidden";
   });
 
+  // jab close icon pe click ho to mobile menu hide karo aur body scroll enable karo
   closeMenu.addEventListener("click", () => {
     mobileMenu.classList.remove("active");
     document.body.style.overflow = "auto";
   });
 
-// this code is to use menu bar sub menu   
+// YE CODE IS TO USE MOBILE FEATURE PANEL IN NAVBAR  
 
-var featureToggle = document.getElementById("mobileFeatureToggle");
-var featurePanel = document.getElementById("featurePanel");
-var backBtn = document.getElementById("backToMenu");
+var featureToggle = document.getElementById("mobileFeatureToggle"); // mobile feature panel toggle button ko select karne ke liye
+var featurePanel = document.getElementById("featurePanel"); // mobile feature panel container ko select karne ke liye
+var backBtn = document.getElementById("backToMenu"); // mobile feature panel me back button ko select karne ke liye
+
+// jab feature toggle button pe click ho to feature panel show karo
 
 featureToggle.addEventListener("click", function(e){
   e.preventDefault();
   featurePanel.classList.add("active");
 });
-
+ 
+// jab back button pe click ho to feature panel hide karo
 backBtn.addEventListener("click", function(){
   featurePanel.classList.remove("active");
 });
